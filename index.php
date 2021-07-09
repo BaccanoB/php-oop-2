@@ -23,6 +23,10 @@
             <p>Residente in : <?= $user->address?></p>
             <h4>Numero Carta: <?= $cardBeatrice->card?></h4>
             <p><?= $user->getDiscount()?></p>
+
+            <p>Ha acquistato:<?= $shopping->number ?> prodotti</p>
+            <p>Al prezzo di <?= $shopping->price ?> &euro; l'uno</p>
+            <h3>La spesa totale è di <?= $shopping->getPrice() ?> &euro;</h3>
         </section>
     </main>
     

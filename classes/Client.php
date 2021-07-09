@@ -1,6 +1,7 @@
 <?php 
     require_once __DIR__."/Users.php";
     require_once __DIR__."/Card.php";
+    require_once __DIR__."/Products.php";
     class Client extends Users{
         public $address;
         private $creditCard;
@@ -23,6 +24,15 @@
             return $sconto;
         }
 
+        // public function getFinalPrice(){
+        //     $finalPrice=($this->price->totalPrice * 100) / $this->clientCard->discount;
+        //     return $finalPrice=$this->price->totalPrice - $finalPrice;
+        // }
+
     }
 
+    $shopping= new Products(2,16);
+
     $cardBeatrice= new Card (1,30);
+
+    // $price=new Products (2,16);
