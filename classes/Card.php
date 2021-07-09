@@ -17,4 +17,8 @@
             return $this->card;
         }
 
+        public function getDiscount(){
+            return $this->discount;
+        }
+
     }
